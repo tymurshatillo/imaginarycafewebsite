@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear's Den Cafe</title>
+</head>
+<!-- The content of the body tag is visible on the website -->
+<body>
+    <section id = "top_panel">
+    <header>
+        <img id = "logo" class = "rounded_image logo" src = "../img/logo.svg" alt = "Bear & Brew Haven logo">
+        <h1> Bear's Den Cafe </h1>
+    <nav>
+        <!-- A link to the contacts page -->
+            <button class="nav-toggle" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href ="../">Home</a></li>
+
+                <li class = "expander">
+                    <button class = "expander-button" onclick="window.location.href='./menu/';">Menu</button>
+                    <div class = "expander-content">
+                        <a href = "./menu/#drinks">Coffee</a>
+                        <a href = "./menu/#food">Tea</a>
+                        <a href = "./menu/#desserts">Other Drinks</a>
+                        <a href = "./menu/#snacks">Pastries</a>
+                    </div>
+                </li>
+
+                <li id = "current">Events</li>
+                <li><a href ="../contact/">Contact</a></li>
+            </ul>
+    </nav>
+    </header>
+    </section>
+
+    <section id = "upcoming_events">
+        <h3>Upcoming Events</h3>
+        <div class="row">
+            <div class="column">
+                <div class="menu_item bg_white image_menu">
+                    <img src = "../img/livemusic.jpg" class = "menu_image width_300" alt = "Cat"/>
+                    <div class = "text">
+                        <h4>Live Music</h4>
+
+                        <p class = "margin_bottom_05">📅 Every Saturday</p>
+                        <p class = "margin_bottom_05">⏱️ 7:00 PM - 10:00 PM</p>
+
+                        <p>Local musicians perform in our cozy space. </p>
+                        <a class = "no_text_decor light_green_text" href = "#">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="menu_item bg_white image_menu">
+                    <img src = "../img/boardgamenight.jpg" class = "menu_image width_300" alt = "Cat"/>
+                    <div class = "text">
+                        <h4>Board Game Night</h4>
+
+                        <p class = "margin_bottom_05">📅 Every Sunday</p>
+                        <p class = "margin_bottom_05">⏱️ 5:00 PM - 9:00 PM</p>
+
+                        <p>Try our collection of board games! Complimentary tea available.</p>
+                        <a class = "no_text_decor light_green_text" href = "#">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="menu_item bg_white image_menu">
+                    <img src = "../img/bookclub.jpg" class = "menu_image width_300" alt = "Cat"/>
+                    <div class = "text">
+                        <h4>Forest Book Club</h4>
+
+                        <p class = "margin_bottom_05">📅 First Tuesday of every month</p>
+                        <p class = "margin_bottom_05">⏱️ 2:00 PM - 4:00 PM</p>
+
+                        <p>Book of the Month: Sonny’s Blues by James Baldwin</p>
+                        <a class = "no_text_decor light_green_text" href = "#">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h4 id = "footer_title">Bear's Den Cafe</h4>
+                <p>Where nature meets delicious brews and cozy bites</p>
+            </div>
+            
+            <div class="column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../home/">Home</a></li>
+                    <li><a href="../menu/">Menu</a></li>
+                    <li id = "current">Events</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="../contact/">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Connect</h4>
+                <p>Instagram: @bearsdencafe</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src = "../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear's Den Cafe</title>
+</head>
+<!-- The content of the body tag is visible on the website -->
+<body>
+    <section id = "top_panel">
+    <header>
+        <img id = "logo" class = "rounded_image logo" src = "../img/logo.svg" alt = "Bear & Brew Haven logo">
+        <h1> Bear's Den Cafe</h1>
+    <nav>
+        <!-- A link to the contacts page -->
+            <button class="nav-toggle" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href = "../">Home</a></li>
+
+                <li class = "expander">
+                    <button class = "expander-button" onclick="window.location.href='../menu/';">Menu</button>
+                    <div class = "expander-content">
+                        <a href = "../menu/#drinks">Coffee</a>
+                        <a href = "../menu/#food">Tea</a>
+                        <a href = "../menu/#desserts">Other Drinks</a>
+                        <a href = "../menu/#snacks">Pastries</a>
+                    </div>
+                </li>
+
+                <li><a href ="../events/">Events</a></li>
+                <li id = "current">Contact</li>
+            </ul>
+    </nav>
+    </header>
+    </section>
+
+    <section id = "find_us">
+        <h3>Find Us</h3>
+        <div class="row">
+
+            <div class="column">
+                <div class="menu_item padding_2" id = "map_holder" width="20vh" height = "20vw">
+                    <iframe class = "fit_inside" src="https://www.openstreetmap.org/export/embed.html?bbox=24.94029521942139%2C60.19822474062271%2C24.995484352111816%2C60.21204299803091&amp;layer=mapnik" id = "map"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=15/60.20513/24.96789">See a bigger map</a></small>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="menu_item padding_2" width = "20vh" height = "20vw">
+                    <div class = "text">
+                        <h4 class="text_size_1_5">For business inquiries:</h4>
+
+                        <p class = "margin_bottom_05">🚩 Hämeentie 152, 00560 Helsinki, Finland</p>
+                        <p class = "margin_bottom_05">📞 +358 64 583 9302</p>
+                        <p class = "margin_bottom_05">📧 bearsdensocial@gmail.com</p>
+                         <p class = "margin_bottom_05"></p>
+
+                        <h4 class = "margin_bottom_05 margin_top_1_5">Hours</h4>
+
+                        <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                        <p>Saturday - Sunday: 9:00 AM - 00:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h4 id = "footer_title">Bear's Den Cafe</h4>
+                <p>Where nature meets delicious brews and cozy bites</p>
+            </div>
+            
+            <div class="column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../home/">Home</a></li>
+                    <li><a href="../menu/">Menu</a></li>
+                    <li><a href="../events/">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Information</h4>
+                <ul>
+                    <li id = "current">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Connect</h4>
+                <p>Instagram: @bearsdencafe</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src = "../script.js"></script>
+</body>
+</html>

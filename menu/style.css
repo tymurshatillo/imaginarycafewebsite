@@ -1,0 +1,68 @@
+section{
+    background-color: #f9f5f0;
+}
+
+/* -------------------------- Classes --------------------------*/
+
+.grid_2{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.item_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_category{
+    padding: 3rem 1rem;
+}
+
+.menu_category h3{
+    justify-self: left;
+    border-color: #bbf7d0;
+
+    margin: 0px 0px 24px;
+}
+
+.menu_category h4{
+    font-size: 1.25rem;
+}
+
+.menu_category p{
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+/* -------------------------- Ids --------------------------*/
+#navigation{
+    padding: 0px 0px 16px;
+}
+
+#navigation a{
+    border-radius: 9999px;
+    background-color: #15803d;
+    text-decoration: none;
+    color: white;
+
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+#our_menu{
+    padding: 3rem 1rem 0rem;
+}
+
+#our_menu h2{
+    justify-self: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .grid_2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

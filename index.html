@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear's Den Cafe</title>
+</head>
+<!-- The content of the body tag is visible on the website -->
+<body>
+    <section id = "top_panel">
+    <header>
+        <img id = "logo" class = "rounded_image logo" src = "./img/logo.svg" alt = "Bear & Brew Haven logo">
+        <h1> Bear's Den Cafe </h1>
+        <nav>
+            <button class="nav-toggle" aria-expanded="false">☰</button>
+
+            <ul class="nav-links">
+                <li id="current">Home</li>
+
+                <li class="expander">
+                    <button class="expander-button" onclick="window.location.href='./menu/';">Menu</button>
+                    <div class="expander-content">
+                        <a href="./menu/#drinks">Coffee</a>
+                        <a href="./menu/#food">Tea</a>
+                        <a href="./menu/#desserts">Other Drinks</a>
+                        <a href="./menu/#snacks">Pastries</a>
+                    </div>
+                </li>
+
+                <li><a href="./events/">Events</a></li>
+                <li><a href="./contact/">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    </section>
+    <section id = "main_background">
+        <div id ="main_intro">
+            <img class = "rounded_image inline_block floating_image" src = "./img/logo.svg" alt = "Bear & Brew Haven logo">
+            <h2>Welcome to Bear's Den Cafe</h2>
+            <p>Where nature meets delicious brews and cozy bites</p>
+            <a class = "no_text_decor" href = "./menu">View our menu</a>
+        </div>
+    </section>
+    <section id = "featured_treats">
+        <h3>Our Featured Treats</h3>
+        <div class="row">
+            <div class="column">
+                <div class="menu_item image_menu">
+                    <img src = "./img/croissantandlatte.jpg" class = "menu_image" alt = "Butter Croissant"/>
+                    <div class = "text">
+                        <h4>Butter Croissant</h4>
+                        <p>One of our most popular, everyone loves this buttery and flaky classic! </p>
+                        <span class = "light_green_text">€0.50</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="menu_item image_menu">
+                    <img src = "./img/berrytart.jpg" class = "menu_image" alt = "Forest Berry Tart"/>
+                    <div class = "text">
+                        <h4>Forest Berry Tart</h4>
+                        <p>Berry lovers unite! </p>
+                        <span class = "light_green_text">€2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="menu_item image_menu">
+                    <img src = "./img/donut.jpg" class = "menu_image" alt = "Powdered Sugar Donut"/>
+                    <div class = "text">
+                        <h4>Powdered Sugar Donut</h4>
+                        <p>Yes, 50 cents in this economy! </p>
+                        <span class = "light_green_text">€0.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "our_story">
+        <h3>Media</h3>
+        <div class="row">
+            <div class="column">
+                <div class="menu_item">
+                    <div class = "text">
+                        <h4 class="text_size_1_5">Happy Customer</h4>
+                    </div>
+
+                    <div class = "menu_media">                        
+                        <video controls class = "fit_inside">
+                            <source src="./media/video_tour.mp4" type="video/mp4">
+                            Your browser does not support the video tag :c
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="menu_item">
+                    <div class = "text">
+                        <h4 class="text_size_1_5">Our Song!</h4>
+
+                        <div class = "menu_media align_center">   
+                        <audio controls>
+                            <source src="./media/cafe_playlist.wav" type="audio/wav">
+                            Your browser does not support the audio element :c
+                        </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id = "newsletter_subscribe">
+        <h3>Get Updates</h3>
+        <p class = "margin_bottom_05">Subscribe to our newsletter for seasonal specials and event announcements!</p>
+        <form>
+            <input type = "email" placeholder="Your email"><button type ="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="column">
+                <h4 id = "footer_title">Bear's Den Cafe</h4>
+                <p>Where nature meets delicious brews and cozy bites</p>
+            </div>
+            
+            <div class="column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li class = "current">Home</li>
+                    <li><a href="./menu/">Menu</a></li>
+                    <li><a href="./events/">Events</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="./contact/">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h4>Connect</h4>
+                <p>Instagram: @bearsdencafe</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>

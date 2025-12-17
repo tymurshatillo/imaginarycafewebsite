@@ -1,0 +1,395 @@
+html{
+    height: 100%;
+}
+
+/*Defines the background color of the website*/
+body {
+    background-color: #f0fdf4;
+    height: 100%; /*parent of section, which needs to be 100% height*/
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+
+section{
+    color: #3D3D3D;
+    background-color: #fff;
+    margin: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+nav{
+    margin-left: auto;
+}
+
+header{
+    
+    background-color: #166534;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+}
+
+nav ul {
+    margin: 0px 20px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Moves the small text 50 pixels to the right */
+
+nav li{
+  display: inline-block;
+  padding: 10px 10px;
+  margin: 0px 0px 0px 32px;
+  line-height: 1;
+  vertical-align: middle;
+    color: #3D3D3D;
+
+}
+
+nav li:hover {
+    background-color: green;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin: 0px 0px 0px 8px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    color: #2D3748;
+}
+
+h2{
+    font-family: "EB Garmond", serif;
+    font-size: 2.25rem;
+    color: #14532d;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
+h3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.875rem;
+    color: #166534;
+    font-family: 'EB Garamond', serif;
+    margin: 0px;
+    justify-self: center;
+}
+
+h4{
+    font-family:'EB Garamond', serif;
+    color: #166534;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 1.25rem;
+}
+
+footer{
+    background-color: #14532d;
+    color: #2D3748;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer .row{
+    gap: 2rem;
+}
+
+footer h4{
+    color: inherit;
+    justify-self: left;
+    align-self: left;
+    margin-bottom: 1rem;
+}
+
+footer .row .column{
+    align-items: flex-start;
+}
+
+footer .row .column p{
+    margin: 0px;
+}
+
+footer .row .column a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .row .column ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .row .column ul li{
+    text-decoration: none;
+    padding: 3.5px;
+}
+
+/* Dropdown Button */
+nav li .expander-button {
+  border: none;
+  padding: 0px;
+  color: white;
+  font: inherit;
+  background-color: transparent;
+}
+
+/* -------------------------- Classes --------------------------*/
+
+/* The container - needed to position the dropdown content */
+.expander {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.expander-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.expander-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.expander-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.expander:hover .expander-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.expander:hover .expander-button {background-color: #3e8e41;}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  color: white; 
+}
+
+.text_size_1_5{
+    font-size: 1.5rem;
+}
+
+.rounded_image{
+    border-radius: 99999px;
+}
+
+.inline_block{
+    display: inline-block;
+}
+
+.width_300{
+    width: 300;
+}
+
+.margin_bottom_05{
+    margin-bottom: 0.5rem;
+}
+
+.margin_top_1_5{
+    margin-top: 1.5rem;
+}
+
+.bg_light_green{
+    background-color: #f0fdf4;
+}
+
+.bg_white{
+    background-color: white;
+}
+
+.light_green_text{
+    color: #15803d;
+}
+
+.padding_2{
+    padding: 2rem;
+}
+
+.fit_inside{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.floating_image{
+    animation: float 3s ease-in-out infinite;
+    height: 8rem;
+    width: 8rem;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+.no_text_decor{
+    text-decoration: none;
+}
+
+.menu_item{
+    flex-direction: column;
+    display: inline-block;
+    align-items: flex-start;
+
+    border-radius: 0.5rem;
+    overflow:hidden;
+
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    margin-bottom: 1rem;
+}
+
+.menu_image {
+    display: block;
+}
+
+.menu_item .text{
+    box-sizing: border-box;
+    padding: 1.5rem;
+    width: -moz-fit-content;
+    max-width: 100%;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.menu_item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.text span{
+    font-style: bold;
+}
+
+.menu_media{
+    aspect-ratio: 16 / 9;
+    max-height: 16rem;
+    display: flex;
+    justify-content: center;
+    border-radius: inherit;
+    align-items: center;
+    padding: 1rem;
+}
+
+.align_center{
+    align-items: center;
+}
+
+.column {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.underscore-text{
+    border-bottom: 2px solid #bbf7d0;
+    display: block;
+    width: 100%;
+    --tw-border-opacity: 1;
+
+    padding-bottom: 8px;
+    margin: inherit;
+}
+
+/* -------------------------- Ids --------------------------*/
+
+#top_panel{
+    padding: 0px;
+    padding-top: 0px;
+}
+
+/* -------------------------- Ot her--------------------------*/
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); } /* moves up 15px */
+  100% { transform: translateY(0); }
+}
+
+/* ^_^ Responsive design ^_^ */
+/* Tablet and older laptops */
+@media (max-width: 700px){
+    header{
+        display: block; /* causes nav to drop down underneath the logo */
+    }
+
+    .menu_media{
+        width: auto;
+    }
+ 
+    nav li{
+        margin: 0px;
+    }
+
+    .expander:hover .expander-content {display: none;}
+}
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-direction: row;
+  }
+}

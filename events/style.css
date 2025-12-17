@@ -1,0 +1,21 @@
+section{
+    padding: 0px;
+}
+
+#separator-section{
+    padding: 0rem 1rem;
+    padding-top: 1rem;
+}
+
+/* -------------------------- Ids --------------------------*/
+#separator-section p{
+    font-weight: bold;
+    color: #166534;
+    font-family: 'EB Garamond', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
